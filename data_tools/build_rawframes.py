@@ -27,6 +27,7 @@ def dump_frames(vid_item):
                   'Early stop with {} out of {} frames'.format(i + 1, len(vr)))
             break
     print('{} done with {} frames'.format(vid_name, len(vr)))
+    os.unlink(full_path)
     sys.stdout.flush()
     return True
 
